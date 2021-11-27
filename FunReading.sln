@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunReading", "FunReading\FunReading.csproj", "{8C82EE97-1380-4862-91C9-3F7A86BA431E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C82EE97-1380-4862-91C9-3F7A86BA431E}.Debug|Any CPU.ActiveCfg = Release|Win32
+		{8C82EE97-1380-4862-91C9-3F7A86BA431E}.Debug|Any CPU.Build.0 = Release|Win32
+		{8C82EE97-1380-4862-91C9-3F7A86BA431E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C82EE97-1380-4862-91C9-3F7A86BA431E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EFF71FF-574A-4F0F-A639-B87063228920}
+	EndGlobalSection
+EndGlobal
