@@ -1,21 +1,13 @@
 Name "FunReading"
 OutFile "funreading-installer.exe"
-InstallDir $PROGRAMFILES\funreading
+InstallDir $DOCUMENTS\funreading
 DirText "Ce programme va installer l'app funreading"
 
 
 
 Section ""
 SetOutPath $INSTDIR
-File .\FunReading\bin\Release\FunReading.exe
-File .\FunReading\bin\Release\FunReading.exe.config
-File .\FunReading\bin\Release\FunReading.pdb
-File .\FunReading\bin\Release\Microsoft.Web.WebView2.Core.dll
-File .\FunReading\bin\Release\Microsoft.Web.WebView2.Core.xml
-File .\FunReading\bin\Release\Microsoft.Web.WebView2.WinForms.dll
-File .\FunReading\bin\Release\Microsoft.Web.WebView2.WinForms.xml
-File .\FunReading\bin\Release\Microsoft.Web.WebView2.Wpf.dll
-File .\FunReading\bin\Release\Microsoft.Web.WebView2.Wpf.xml
+File .\FunReading\bin\Release\*
 CreateDirectory $INSTDIR\runtimes
 
 CreateDirectory $INSTDIR\runtimes\win-arm64
@@ -34,8 +26,7 @@ SetOutPath $INSTDIR\runtimes\win-x86\native
 File ".\FunReading\bin\Release\runtimes\win-x86\native\*"
 
 SetOutPath $INSTDIR\FunReading.exe.WebView2\EBWebView
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\CrashpadMetrics.pma
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\CrashpadMetrics-active.pma
+File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\*
 
 
 CreateDirectory $INSTDIR\FunReading.exe.WebView2
@@ -53,9 +44,7 @@ CreateDirectory $INSTDIR\FunReading.exe.WebView2\EBWebView\CertificateRevocation
 CreateDirectory $INSTDIR\FunReading.exe.WebView2\EBWebView\Crashpad
 CreateDirectory $INSTDIR\FunReading.exe.WebView2\EBWebView\Crashpad\reports
 SetOutPath $INSTDIR\FunReading.exe.WebView2\EBWebView\Crashpad
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Crashpad\metadata
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Crashpad\settings.dat
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Crashpad\throttle_store.dat
+File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Crashpad\*
 
 CreateDirectory $INSTDIR\FunReading.exe.WebView2\EBWebView\Default
 
@@ -73,19 +62,7 @@ CreateDirectory $INSTDIR\FunReading.exe.WebView2\EBWebView\Default\Sessions
 CreateDirectory $INSTDIR\FunReading.exe.WebView2\EBWebView\Default\shared_proto_db
 CreateDirectory $INSTDIR\FunReading.exe.WebView2\EBWebView\Default\shared_proto_db\metadata
 SetOutPath $INSTDIR\FunReading.exe.WebView2\EBWebView\Default
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\Bookmarks
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\Cookies
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\Cookies-journal
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\Favicons
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\Favicons-journal
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\heavy_ad_intervention_opt_out.db
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\heavy_ad_intervention_opt_out.db-journal
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\History
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\Preferences
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\README
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\TransportSecurity
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\WebAssistDatabase
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\WebAssistDatabase-journal
+File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\*
 
 SetOutPath $INSTDIR\FunReading.exe.WebView2\EBWebView\Default\AutofillStrikeDatabase
 File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\AutofillStrikeDatabase\*
