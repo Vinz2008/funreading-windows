@@ -74,10 +74,10 @@ SetOutPath $INSTDIR\FunReading.exe.WebView2\EBWebView\Default\data_reduction_pro
 File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\data_reduction_proxy_leveldb\*
 SetOutPath $INSTDIR\FunReading.exe.WebView2\EBWebView\Default\GPUCache
 File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\GPUCache\*
-SetOutPath $INSTDIR\FunReading.exe.WebView2\EBWebView\Default\optimization_guide_hint_cache_store
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\optimization_guide_hint_cache_store\*
-SetOutPath $INSTDIR\FunReading.exe.WebView2\EBWebView\Default\optimization_guide_model_and_features_store
-File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\optimization_guide_model_and_features_store\*
+#SetOutPath $INSTDIR\FunReading.exe.WebView2\EBWebView\Default\optimization_guide_hint_cache_store
+#File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\optimization_guide_hint_cache_store\*
+#SetOutPath $INSTDIR\FunReading.exe.WebView2\EBWebView\Default\optimization_guide_model_and_features_store
+#File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\optimization_guide_model_and_features_store\*
 SetOutPath $INSTDIR\FunReading.exe.WebView2\EBWebView\Default\shared_proto_db
 File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\shared_proto_db\CURRENT
 File .\FunReading\bin\Release\FunReading.exe.WebView2\EBWebView\Default\shared_proto_db\LOCK
@@ -122,7 +122,7 @@ SectionEnd
 
 Section "Uninstall"
 Delete $INSTDIR\*
-RMDir $INSTDIR
+RMDir /r "$INSTDIR"
 Delete "$SMPROGRAMS\funreading\FunReading.lnk"
 RMDIR "$SMPROGRAMS\funreading"
 SectionEnd
